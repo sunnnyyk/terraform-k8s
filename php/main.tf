@@ -82,11 +82,11 @@ module "instance_public" {
 
 module "eks" {
   source            = "./eks"
-  cluster_name      = "my-eks-cluster"
+  cluster_name      = "my-eks-o-cluster"
   region            = "us-east-1"
   vpc_id            = module.vpc.vpc_id
   public_subnet_ids = module.privatesubnet.privatesub_id
-  node_group_name   = "my-eks-nodes"
+  node_group_name   = "my-eks-one-nodes"
   instance_type     = "t3.medium"
   desired_capacity  = 1
   min_capacity      = 1
