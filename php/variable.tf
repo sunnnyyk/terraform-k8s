@@ -57,7 +57,7 @@ variable "name1" {
 variable "static1" {
   type = map(any)
   default = {
-    ami      = "ami-053b0d53c279acc90"
+    ami      = "ami-05f991c49d264708f"
     publicip = true
     keyname  = "test-keypair"
     itype    = "t2.medium"
@@ -66,7 +66,7 @@ variable "static1" {
 # variable "static2" {
 #   type = map(any)
 #   default = {
-#     ami      = "ami-053b0d53c279acc90"
+#     ami      = "ami-05f991c49d264708f"
 #     publicip = false
 #     keyname  = "ohio"
 #     itype    = "t2.medium"
