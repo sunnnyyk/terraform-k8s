@@ -7,7 +7,7 @@ variable "cidr_subnet" {
 variable "subnet_zone" {
     type = string
 
-  default = "us-east-1a"
+  default = "us-west-2a"
 }
 variable "vpc_id" {
     type = string
