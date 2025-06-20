@@ -59,7 +59,7 @@ variable "public_name" {
 variable "static" {
   type = map(any)
   default = {
-    ami      = "ami-053b0d53c279acc90"
+    ami      = "ami-05f991c49d264708f"
     publicip = true
     keyname  = "ab"
     itype    = "t2.medium"
