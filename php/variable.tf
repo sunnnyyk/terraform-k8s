@@ -23,7 +23,7 @@ variable "cidr_subnet1" {
 variable "subnet_zone1" {
   type = string
 
-  default = "us-east-1a"
+  default = "us-west-2a"
 }
 variable "private_subnet_cidr1" {
   type    = list(string)
@@ -32,7 +32,7 @@ variable "private_subnet_cidr1" {
 
 variable "private_az_zone1" {
   type    = list(string)
-  default = ["us-east-1a", "us-east-1b"]
+  default = ["us-west-2a", "us-west-2b"]
 }
 
 variable "private_subnet_name1" {
