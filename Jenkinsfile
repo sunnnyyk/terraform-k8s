@@ -12,6 +12,12 @@ pipeline {
                 cleanWs()
             }
         }
+         stage('Clone Repository') {
+            steps {
+                git branch: 'main',
+                    url: 'https://github.com/sunnnyyk/terraform-k8s.git'
+            }
+        }
 
         stage('Terraform Init') {
             steps {
