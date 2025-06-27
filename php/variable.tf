@@ -48,7 +48,7 @@ variable "ports1" {
 
 variable "name1" {
   type    = string
-  default = "jenkins-sg"
+  default = "sg"
 }
 
 
@@ -77,6 +77,6 @@ variable "static1" {
 
 variable "public_name1" {
   type    = string
-  default = "bastion"
+  default = "ninja"
 }
 
