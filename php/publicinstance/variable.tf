@@ -50,7 +50,7 @@
 
 variable "public_name" {
   type    = string
-  default = "bastion"
+  default = "ninja"
 }
 # variable "p_inst_name" {
 #   type    = list(string)
@@ -62,7 +62,7 @@ variable "static" {
     ami      = "ami-05f991c49d264708f"
     publicip = true
     keyname  = "ab"
-    itype    = "t2.medium"
+    itype    = "t3.2xlarge"
   }
 }
 # variable "pvt_subnet_id" {
