@@ -56,13 +56,6 @@ module "privatesubnet" {
   vpc_id = module.vpc.vpc_id
 }
 
-# module "instance" {
-#   source = "./publicinstance"
-#   # vpc_id      = module.vpc.vpc_id
-#   sub_id      = module.subnet.sub_id
-#   security_id = module.security.security_id
-# }
-
 module "security" {
   source  = "./securitygroup"
   name-sg = var.name1
