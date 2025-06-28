@@ -1,4 +1,3 @@
-# creating security group
 resource "aws_security_group" "allow_tls" {
   vpc_id = var.vpc_id
   name        = var.name-sg
