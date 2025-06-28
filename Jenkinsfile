@@ -6,8 +6,8 @@ pipeline {
         AWS_SECRET_ACCESS_KEY = credentials('AWS_SECRET_ACCESS_KEY')
     }
 
-
-         stage('Clone Repository') {
+    stages {
+        stage('Clone Repository') {
             steps {
                 git branch: 'main',
                     url: 'https://github.com/sunnnyyk/terraform-k8s.git'
@@ -96,3 +96,4 @@ pipeline {
             }
         }
     }
+}
