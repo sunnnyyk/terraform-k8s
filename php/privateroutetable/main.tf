@@ -11,9 +11,3 @@ resource "aws_route" "r2" {
   gateway_id             = var.natgate_id
   
 }
-
-
-# resource "aws_route_table_association" "rta2" {
-#   subnet_id      = var.privatesub_id 
-#   route_table_id = aws_route_table.ngw-rt.id
-# }
