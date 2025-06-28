@@ -51,9 +51,6 @@ variable "name1" {
   default = "sg"
 }
 
-
-
-
 variable "static1" {
   type = map(any)
   default = {
@@ -63,20 +60,8 @@ variable "static1" {
     itype    = "t2.medium"
   }
 }
-# variable "static2" {
-#   type = map(any)
-#   default = {
-#     ami      = "ami-05f991c49d264708f"
-#     publicip = false
-#     keyname  = "ohio"
-#     itype    = "t2.medium"
-#   }
-# }
-
-
 
 variable "public_name1" {
   type    = string
   default = "ninja"
 }
-
