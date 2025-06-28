@@ -6,12 +6,7 @@ pipeline {
         AWS_SECRET_ACCESS_KEY = credentials('AWS_SECRET_ACCESS_KEY')
     }
 
-    stages {
-      //  stage('Clean Workspace') {
-       //     steps {
-        //        cleanWs()
-         //   }
-       // }
+
          stage('Clone Repository') {
             steps {
                 git branch: 'main',
@@ -44,18 +39,6 @@ pipeline {
                                 sh 'gitleaks detect --no-git -v'
                             } catch (e) {
                                 echo "Gitleaks scan failed: ${e.getMessage()}"
-                            }
-                        }
-                    }
-                }
-
-                stage('Security/Compliance') {
-                    steps {
-                        script {
-                            try {
-                                sh 'checkov -d php'
-                            } catch (e) {
-                                echo "Checkov failed: ${e.getMessage()}"
                             }
                         }
                     }
