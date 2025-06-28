@@ -1,5 +1,4 @@
 resource "aws_instance" "server" {
-  # instance_type = var.instance_type[count.index]
   instance_type               = lookup(var.static, "itype")
   subnet_id                   = var.sub_id
   ami                         = lookup(var.static, "ami")
