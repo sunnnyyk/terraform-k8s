@@ -6,13 +6,13 @@ variable "public_subnet_ids" {
 }
 variable "node_group_name" {}
 variable "desired_capacity" {
-  default = 1
+  default = 2
 }
 variable "max_capacity" {
-  default = 1
+  default = 2
 }
 variable "min_capacity" {
-  default = 1
+  default = 3
 }
 variable "instance_type" {
   default = "t3.medium"
